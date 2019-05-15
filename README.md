@@ -37,7 +37,7 @@ POST: http://localhost:port/inventory
 
 * categories can be old, normal or new
 
-To get a file:
+To get a film:
 
 GET: http://localhost:port/inventory/:id
 
