@@ -17,6 +17,29 @@ What’s happening behind the scenes when you runAll?
 ### Running one service:
 
     $mvn -pl <your-project-name> lagom:run
+    
+### Web services
+
+To stream films:
+
+ws://localhost:port/inventory
+
+To add a film:
+
+POST: http://localhost:port/inventory
+
+```javascript
+{
+  "title": "Jaws",
+  "category": "old"
+}
+```
+
+* categories can be old, normal or new
+
+To get a file:
+
+GET: http://localhost:port/inventory/:id
 
 ### Kafka
 
